@@ -152,7 +152,8 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>You only want to put it onto the master branch once you've tested, </li>
 <li>once you know that everything is working fine and </li>
 <li>then you can bring your code back to the working copy ready for shipment and deployment.</li>
-<li><h3>How to create a branch<h3>
+  
+<h3>How to create a branch</h3>
 <li>To create a new branch you can simply just git branch specify the name of your</li>
 <li>new branch. eg <i> git branch mysidebranch </i></li>
 <li>To see all the branches you created use - <i> git branch </i> u can see main and mysidebranch</li>
@@ -167,7 +168,63 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>you wish or u can do :q! to save and quit  </li>
 <li>now if you can zoom in to network graph and get rid of the tag, then you can see this is the process that we've gone through.</li>
 <li>if you want to create a new branch AND check it out at the same time, you can simply type <i>git checkout -b [yourbranchname]</i>.</li>
-  </section>
+ </section>
 
+<li><a href="https://learngitbranching.js.org">Follow this link to practice branching</a></li>
+<section>
+<h1>collaboration using remote repositories</h1>
+
+<li> you created local repository and then  pushed it to remote repository on GitHub.</li>
+<li> Now let's say that <i>MR X , oh not xman eee </i>, come to the point , x also wanted to make changes to your repository.</li>
+<li> x wants to add some features or fix some bugs or do something.</li>
+<li> Now in order for 'MR x' to work on it she could make a copy of it that exists on x's GitHub account.</li>
+<li> This is different from git clone. Git clone is just grabbing at the entirety of the repository</li>
+<li> and then cloning it to your local work environment.</li>
+<li> Now in this case we're basically just copying a repository that's hosted on GitHub and we're keeping</li>
+<li> the copy under our own GitHub account where we can make changes to it.</li>
+<li> So this in terms of GitHub lingo is called <strong>forking.</stromg></li>
+<li> Now once you fork a remote repository, then you now own it. You have full permissions to do whatever</li>
+<li> it is that you like with this copy of the repository.</li>
+<li> So say if you work within a team and you're all working on a product then everybody in the team probably</li>
+<li> has both read and write permissions on a single remote repository.</li>
+<li> And that way they can get clone and work on it locally and then push it and resolve any sort of conflicts</li>
+<li> But you don't want anybody on the Internet having those kind of permissions.</li>
+<li> <i>So how do you implement this kind of open source collaboration then?</i></li>
+<li> Well it's through <stromg>forking and making pull requests.</stromg></li>
+<li> So now let's say that MR X has forked your repository.</li>
+<li> So on x's GitHub account now owns a copy of your repository.</li>
+<li> And from this point x can then clone that repository to work on it locally.</li>
+<li> And if x decides to add some features to it maybe you know improve the code base or add some more</li>
+<li> code or do something crazy or whatever it is that x wants,</li>
+<li> then after x's happy with that and x's committed those changes then x can push it to  remote</li>
+<li> repository and then if x wants you to incorporate those changes that x made, 
+<li> then the only option is to make a pull request </li>
+<li> So say if x only has read access, then x would have to make a pull request and it's almost like making</li>
+<li> a suggestion. Here are some suggested changes that x've been working on,</li>
+<li> what do you think about it? If you ok it, then please you know merge it to your remote repository.</li>
+<h3>why its called a pull request and not a push request ? <i>yyyy alpha is alpha y cant it be tatabirla<i></h3>
+<li> because the person who has the write permission to the repository,</li>
+<li> so you have write permission to your own remote repository which has been forked and duplicated by MR X.</li>
+<li> If x wants to incorporate those changes then you have to decide.</li>
+<li> So I can review those changes and I can pull the changes over.</li>
+<li> So its not a push because you don't own the rights to the remote repository that you're trying to push</li>
+<li> In this case if you decide after code review that actually those features actually added were pretty great</li>
+<li> and it seems compatible with you code so far and doesn't break anything, then you can approve the pull</li>
+<li> request and merge MR X repository with your own. So the changes will be reflected in a new commit.</li>
+<h3>So lets end the theory and do this in practice?</h3>
+<li>login to you second remort account and navigate to repo in your first account you want to fork. click on fork button on top of the page.it will create duplicate of that 
+repo in ur remote.</li>
+<li>Now login in to ur account1 ,have a look inside graphs, go into network, that that latest change
+is not reflected on your master branch.</li>
+<li>It's showing up as a separate branch made by account2.and you can see who all forked your repo</li>
+<li>Now got to your account2 repo and make a pull request by hitting that button<li> 
+<li>Mention all changes you made and hit the green button - create pull request</li>
+<li>Now got to ur account1 repo , u can see a brand new pull request </li>
+<li>you can see the difference changes and create a review summary</li>
+<li>Now to merge it - click on Merge pull request-add a message-confirm message</li>
+<li>So if you have a look inside  graphs now you can see that the latest commit was my merge and <li>
+<li>you can see where it came from.It came from a fork made by account2 which shows up as a separate branch and then it got merged back</li>
+<li>into the main branch of the main repository.</li>
+</section>
 
  
