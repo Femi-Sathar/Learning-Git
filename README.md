@@ -123,5 +123,51 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>these commit messages that tell you what each commit was all about.</li>
 </section>
 
+<section>
+<h1>Branching and Merging</h1>
+<h3>Why we need to create branches?</h3>
+<li>Now let's start off with a simple example say if we had version 1 and 2,</li>
+<li>so two commits that were made to our local repository.</li>
+<li>Now at this point we realize that we want to maybe try out something different, maybe build a new feature</li>
+<li>or just to mess around with a new idea or concept.</li>
+<li>So what we can do is instead of continuing to commit to the master branch which is the main branch ,</li>
+<li>we can also create a side branch. So we can create as many branches as we like.</li>
+<li>We can add some features and some code.</li>
+<li>Now simultaneously we can continue working on the main branch putting out all those essential updates</li>
+<li>or bits of code that are maintaining our main project but at the same time we can continue to update</li>
+<li>and work on side branch</li>
+<li>So now we have two branches that are parallel to each other and they can be developed simultaneously.</li>
+<li>Now if at some point in the future that we decide that that side branch was really fruitful and the feature</li>
+<li>that we built in it was really really great and we'd like to merge it back to the main branch or to</li>
+<li>the main project, then that can be done really easily as well by simply placing a merge request in.</li>
+<li>And we can bring all of those changes that we experimented with, that we messed around with back to the</li>
+<li>main project and check to see if there's any conflicts with the main branch code.</li>
+<br/>
+<br/>
+<li>very often what you see in practice is that there'll be multiple branches being worked</li>
+<li>on at the same time for any given large project.</li>
+<li>And the reason is because sometimes you are developing new features, </li>
+<li>sometimes you are fixing bugs and all of these things may break your main project </li>
+<li>so you don't want to do it on the master branch.</li>
+<li>You only want to put it onto the master branch once you've tested, </li>
+<li>once you know that everything is working fine and </li>
+<li>then you can bring your code back to the working copy ready for shipment and deployment.</li>
+<li><h3>How to create a branch<h3>
+<li>To create a new branch you can simply just git branch specify the name of your</li>
+<li>new branch. eg <i> git branch mysidebranch </i></li>
+<li>To see all the branches you created use - <i> git branch </i> u can see main and mysidebranch</li>
+<li>To switch to side branch - <i>git checkout sidebranch name</i>, you will get a message switched to side branch</li>
+<li>Now you can modify files or create files and do git add . ,git commit ,to save to side branch. you can see modified files</li>
+<li>To switch to main - git checkout main , you can open and see the files in main branch, its unchanged</li>
+<li>you can see the local files changes when you switch branches </li>
+<li>Now switch to main and do git log - u can see changes in main branch, side branch in local repo , remote repo</li>
+<li>To merge updates in side branch to main - switch to main branch . </li>
+<li>then use the command <i>git merge specify the side branch name.</li>
+<li>Hit enter and this opens up Vim which is a text editor and this allows you to add a merge message if</li>
+<li>you wish or u can do :q! to save and quit  </li>
+<li>now if you can zoom in to network graph and get rid of the tag, then you can see this is the process that we've gone through.</li>
+<li>if you want to create a new branch AND check it out at the same time, you can simply type <i>git checkout -b [yourbranchname]</i>.</li>
+  </section>
+
 
  
