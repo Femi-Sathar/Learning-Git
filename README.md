@@ -163,7 +163,7 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>you can see the local files changes when you switch branches </li>
 <li>Now switch to main and do git log - u can see changes in main branch, side branch in local repo , remote repo</li>
 <li>To merge updates in side branch to main - switch to main branch . </li>
-<li>then use the command <i>git merge specify the side branch name.</li>
+ <li>then use the command <i>git merge specify the side branch name.</i></li>
 <li>Hit enter and this opens up Vim which is a text editor and this allows you to add a merge message if</li>
 <li>you wish or u can do :q! to save and quit  </li>
 <li>now if you can zoom in to network graph and get rid of the tag, then you can see this is the process that we've gone through.</li>
@@ -226,5 +226,9 @@ is not reflected on your master branch.</li>
 <li>you can see where it came from.It came from a fork made by account2 which shows up as a separate branch and then it got merged back</li>
 <li>into the main branch of the main repository.</li>
 </section>
+  <h1>Now to sum up</h1>
+  <img src="https://github.com/Femi-Sathar/Learning-Git/blob/main/gitcommand.png">
+  <p> Thank you Angela -London App Brewery - source Udemy full stack web development</p>
+  <p>Sharing is caring . share with your friends. Much Love Femi Sathar</p>
 
  
