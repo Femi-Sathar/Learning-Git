@@ -111,5 +111,17 @@ Once all this is done, you'll get a message along the lines of that your public 
  <li>Now if you do git add . and check git status you can see that secret.txt is ignored</li>
 </section>
 
+<section>
+<h1>gitclone</h1>
+<h3> Remote Repo -> Working Directory</h3>
+<li>cloning a remote repository pull it into your local machine.</li>
+<li>So this is called cloning or the command would be git clone and that is a way for you to pull down all</li>
+<li>of the commits and all of the versions of a particular remote repository and to store the files inside</li>
+<li>your working directory.</li>
+<li>command - git clone URL of a particular remote repository </li>
+<li>You can also use 'git log' to check out some of their previous commits and you can see they've got all</li>
+<li>these commit messages that tell you what each commit was all about.</li>
+</section>
+
 
  
