@@ -49,6 +49,45 @@
 <li>So the staging area is a good place to try and figure out what are the things that you want Git to ignore nd what are the things that you want to be tracked.</li>
 </ul>
 </section>
-<h1>To see the diff b/w wprking repo file and last save point use command <i>git diff</i>
-<h1>Reverting changes made in working directory - <i>So git checkout name of file to revert</i></h1>
+
+<h3>To see the diff b/w wprking repo file and last save point use command <i>git diff</i></h3>
+<h3>Reverting changes made in working directory - <i>git checkout name of file to revert</i></h3>
+
+<section>
+  <h1>Github - Remote Repository</h1>
+ <li>Create account ,login,create a new repo,mark public ,dont initialize a read me .go ahead and click the big green button and create repository.</li>
+<li>So now you can see that there are two ways that they tell you you can set up your repository.</li>
+<li>You can either set it up in GitHub for Mac on desktop their desktop client </li>
+<li>But instead we can use command line instructions to set up our repository.</li>
+<li>follow below steps before using command line instruction to add files to github</li>
+<pre>
+Step 1) You will need to config your git username and email with the following commands. This is assuming you setup your github account already:
+             git config --global user.name 'Your Name'
+             git config --global user.email 'your_email@example.com'
+Step 2) You need to create an SSH folder for your SSH keys. From my understanding, its like a key that will link your computer to your github account. First you need to create a ".ssh" folder in the root directory
+             cd ~/.ssh
+Step 3)This is just following a lot procedures to follow to create your SSH key:
+             eval `ssh-agent -s`
+             ssh-keygen -t rsa -C "your_email@example.com"
+You should see something like "Generating public/private rsa key pair". It will ask you file to save key, passphrase, passphrase again. I left all three blank and pressed Enter each time.
+Once all this is done, you'll get a message along the lines of that your public key has been created at the SSH directory along with a unique key fingerprint ID. The last step is to add your new key to the SSH agent with the following:
+    ssh-add ~/.ssh/id_rsa
+<Step 4) Go to Account Settings on your GitHub account on your browser and click "SSH and GPC keys" tab and click "New SSH Key" button on top right of page.
+<li>Set a title that makes sense for you. Something like "MyPC SSHkey".</li>
+<li>For the "Key" textbox, you need to copy the key you generated in the previous step in the ".ssh" folder. Navigate to that folder and open the "id_rsa.pub" file with any text editor.</li> 
+<li>Copy the key exactly as you see it. It should begin with "ssh-rsa".</li>
+<li>Just click "Add SSH key" after that and you should be good.</li>
+</pre>
+<li>So we are going to push an existing repository that we've got locally onto this remote repository and to do that we need to copy the address of our GitHub  repository</li>
+<li>and we're going to use two lines of code in order to transfer or push our existing local repository</li>
+<li>from the command line. </li>
+<li> - git remote add origin ur ssh path </li>
+<li> - gitu push - u origin main</li>
+<li>Now origin is simply the name of your remote, main is the master branch</li>
+<li>And what this line of code does is that it pushes your local repository to the remote repository using the u flag or the u option which basically links up your remote and your local repositories.</li>
+<li>we're going to push it towards the remote that's called origin and we're going to push it to the branch that's called master.So the master branch is simply the default branch or the main branch of all of your commits.</li>
+<li>if everything is fine you can see message - branch 'main' set up to track 'origin/main'. in command line</li>
+<li>our files are now hosted on GitHub and it's complete with all of our commit messages.</li>
+<li>So if you go to insights, graphs and go into network, you can actually see our mass the branch which shows the save points .If you hover over them you can actually see the commit messages of each of these.</li>
+</section>
  
