@@ -182,7 +182,7 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li> and then cloning it to your local work environment.</li>
 <li> Now in this case we're basically just copying a repository that's hosted on GitHub and we're keeping</li>
 <li> the copy under our own GitHub account where we can make changes to it.</li>
-<li> So this in terms of GitHub lingo is called <strong>forking.</stromg></li>
+<li> So this in terms of GitHub lingo is called <strong>forking.</strong></li>
 <li> Now once you fork a remote repository, then you now own it. You have full permissions to do whatever</li>
 <li> it is that you like with this copy of the repository.</li>
 <li> So say if you work within a team and you're all working on a product then everybody in the team probably</li>
