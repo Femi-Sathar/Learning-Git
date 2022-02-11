@@ -202,7 +202,7 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li> So say if x only has read access, then x would have to make a pull request and it's almost like making</li>
 <li> a suggestion. Here are some suggested changes that x've been working on,</li>
 <li> what do you think about it? If you ok it, then please you know merge it to your remote repository.</li>
-<h3>why its called a pull request and not a push request ? <i>yyyy alpha is alpha y cant it be tatabirla<i></h3>
+<h3>why its called a pull request and not a push request ? <i>yyyy alpha is alpha y cant it be tatabirla</i></h3>
 <li> because the person who has the write permission to the repository,</li>
 <li> so you have write permission to your own remote repository which has been forked and duplicated by MR X.</li>
 <li> If x wants to incorporate those changes then you have to decide.</li>
