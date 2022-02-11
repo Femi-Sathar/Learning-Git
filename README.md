@@ -47,6 +47,7 @@
 <li>Why do we need this extra step?</li>
 <li>Well sometimes you might not want to add all of your files to be tracked or all of your files to be committed.</li>
 <li>So the staging area is a good place to try and figure out what are the things that you want Git to ignore nd what are the things that you want to be tracked.</li>
+ <l1>To remove everything from staging area use <i>"git rm --cached -r ."</i></li>
 </ul>
 </section>
 
@@ -89,5 +90,26 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>if everything is fine you can see message - branch 'main' set up to track 'origin/main'. in command line</li>
 <li>our files are now hosted on GitHub and it's complete with all of our commit messages.</li>
 <li>So if you go to insights, graphs and go into network, you can actually see our mass the branch which shows the save points .If you hover over them you can actually see the commit messages of each of these.</li>
+
+<h3> Working file - > Staging Area - > Local Repository - > Remote Repository </h3>
+
 </section>
+<section>
+<h1>gitignore</h1>
+  <li>you might want to not upload certain things to GitHub, </li>
+ <li>for eg files that are to do with your local settings or your user preferences.</li>
+ <li>There's a whole bunch of these types of utility files that you don't really want another person to have</li>
+ <li>to download and copy into their project folder if they're cloning or if they're forking your projects.</li>
+ <li>eg- ur API keys or any secret information</li>
+ <li>So a really common example that people tend to add to their gitignore files are what are called DS_</li>
+ <li>Store files. S DS_Store files are basically a settings file that saves certain things like you know how</li>
+ <li>you like your icons to be arranged in a particular project folder.</li>
+ <li>so you can create a <i>.gitignore </i>file - touch .gitignore. to see file in folder user "ls -a", bcoz its hidden</li>
+ <li>"open .gitignore" and add every files you dont want to commit for eg u can add secret.txt.</li>
+ <li>you can use # sign to comment in .gitignore file</li>
+ <li>you can use wildcard *.txt - > everything can be commited except all txt files</li>
+ <li>Now if you do git add . and check git status you can see that secret.txt is ignored</li>
+</section>
+
+
  
