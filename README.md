@@ -83,7 +83,8 @@ Once all this is done, you'll get a message along the lines of that your public 
 <li>and we're going to use two lines of code in order to transfer or push our existing local repository</li>
 <li>from the command line. </li>
 <li> - git remote add origin ur ssh path </li>
-<li> - gitu push - u origin main</li>
+<li> git branch -M main </li>
+<li> - git push - u origin main</li>
 <li>Now origin is simply the name of your remote, main is the master branch</li>
 <li>And what this line of code does is that it pushes your local repository to the remote repository using the u flag or the u option which basically links up your remote and your local repositories.</li>
 <li>we're going to push it towards the remote that's called origin and we're going to push it to the branch that's called master.So the master branch is simply the default branch or the main branch of all of your commits.</li>
